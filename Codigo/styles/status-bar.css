@@ -1,0 +1,56 @@
+.status {
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 1px #43425D33;
+    position: relative;
+}
+
+.status h1 {
+    position: absolute;
+    top: -60px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.status h2, .status h3 {
+    margin: 8px 0;
+    color: #43425D;
+}
+
+.status h2 {
+    font-weight: 600;
+}
+
+.status h3 {
+    font-size: 14px;
+    font-family: Roboto, monospace;
+    font-weight: 400;
+}
+
+.status h3 span {
+    text-decoration: underline;
+}
+
+.status .status-content {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.status .status-content .status-image {
+    margin: 0 30px 0 24px;
+    width: 38px;
+    height: 38px;
+    background: #4AD991;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status .status-content .status-image img {
+    width: 22px;
+    height: 22px;
+}

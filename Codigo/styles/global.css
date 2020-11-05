@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #F8FAFB;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 100vw;
+    height: 160px;
+    background: #43425D;
+}
+
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 80px;
+}
+
+.grid-1 {
+    width: 100%;
+}
+
+.grid-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-2 > section {
+    width: 48.5%;
+}
+
+.grid-1 + section, .grid-2 + section {
+    margin-top: 20px;
+}
+
+section {
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 1px #00000033;
+    background: #FFF;
+}
+
+h1, h2, h3, h4, h5 {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-size: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}

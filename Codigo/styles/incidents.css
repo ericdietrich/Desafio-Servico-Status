@@ -1,0 +1,81 @@
+.incidents {
+    position: relative;
+}
+
+.incidents h1 {
+    padding: 30px 0 0 30px;
+    position: absolute;
+    top: -80px;
+}
+
+.incident {
+    padding: 50px 0 0 60px;
+}
+
+
+.incidents h2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+}
+
+
+
+.incident-status {
+    display: flex;
+    
+}
+
+
+.incident-status:not(:first-child){
+    padding-top: 30px;
+}
+
+.incident-status div {
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 30px;
+}
+
+.incident-status h3 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.incident-status p {
+    color: #4D4F5C;
+    font-size: 10px;
+    opacity: .8;
+}
+
+.incident-status div span {
+    color: #4D4F5C;
+    font-size: 10px;
+    opacity: .5;
+}
+
+.incident .check {
+    height: 24px;
+    width: 24px;
+    border: 1px solid #5EE2A0;
+    border-radius: 50%;
+    color: #5EE2A0;
+    background: #FFF;
+}
+
+.incident .eye {
+    height: 24px;
+    width: 24px;
+    border: 1px solid #81C9FF;
+    border-radius: 50%;
+    color: #81C9FF;
+    background: #FFF;
+}
+
+.incident .info {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    color: #FFF;
+    background:#FFCA83;
+}

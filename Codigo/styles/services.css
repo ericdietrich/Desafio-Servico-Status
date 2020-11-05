@@ -1,0 +1,44 @@
+.services h1 {
+    padding: 30px 0 0 30px;
+}
+
+.services ul {
+    list-style: none;
+    font-family: Roboto;
+    font-size: 14px;
+    padding: 30px;
+}
+
+
+
+.services ul li:not(:first-child)::before {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #F1F1F3;
+    margin: 12px auto;
+}
+
+.services ul li span {
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.services ul li .check {
+    color: #5EE2A0;
+    background: #DAF7E8;
+}
+
+.services ul li .error {
+    color: #FFCA83;
+    background: #FFF4E5;
+}
+
+.services ul li .settings {
+    color: #FF7285;
+    background: #FFE2E6;
+}
+
+
+

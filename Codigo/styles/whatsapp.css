@@ -1,0 +1,20 @@
+.whatsapp  h1 {
+    padding: 20px 0 0 20px;
+}
+
+.whatsapp .whatsapp-content {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.whatsapp .whatsapp-content .y-axis {
+    transform: rotateZ(-90deg);
+}
+
+.whatsapp .whatsapp-content .grafic {
+    height: 240px;
+    width: 650px;
+    background: cornsilk;
+}
