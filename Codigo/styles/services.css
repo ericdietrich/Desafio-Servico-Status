@@ -7,18 +7,16 @@
     font-family: Roboto;
     font-size: 14px;
     padding: 30px;
+    margin-right: 60px;
+}
+
+.services ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
-
-.services ul li:not(:first-child)::before {
-    display: block;
-    content: '';
-    height: 1px;
-    width: 100%;
-    background: #F1F1F3;
-    margin: 12px auto;
-}
 
 .services ul li span {
     border-radius: 50%;

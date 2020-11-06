@@ -13,8 +13,44 @@
     transform: rotateZ(-90deg);
 }
 
-.whatsapp .whatsapp-content .grafic {
+.whatsapp .whatsapp-content .graphic-content {
+    padding: 20px;
+    background: url('../src/img/grid.svg');
+    background-size: cover;
+}
+
+.whatsapp .whatsapp-content .graphic {
+    
+    padding: 20px;
     height: 240px;
-    width: 650px;
-    background: cornsilk;
+    width: 750px;
+    position: relative;
+}
+
+.whatsapp .whatsapp-content .graphic .dot {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.whatsapp .whatsapp-content .graphic .brazil {
+    border: 2px solid #2CD9C5;
+}
+
+.whatsapp .whatsapp-content .graphic .mexico {
+    border: 2px solid #8C54FF;
+}
+
+.whatsapp .whatsapp-content .graphic-legend {
+    font-family: 'Roboto', monospace;
+    font-size: 12px;
+}
+
+.whatsapp p::before {
+  content: '';
+  height: 3px;
+  width: 30px;
+  background: violet;
 }

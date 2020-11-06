@@ -32,7 +32,7 @@ header {
 }
 
 .grid-2 > section {
-    width: 48.5%;
+    width: 455%;
 }
 
 .grid-1 + section, .grid-2 + section {
