@@ -10,9 +10,6 @@ export default function handleServiceStatus() {
         const p = document.createElement('p');
         const span = document.createElement('span');
 
-        console.log(p.appendChild(span));
-
-
         p.innerText = item.service;
         span.classList.add('material-icons');
 

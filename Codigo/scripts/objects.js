@@ -1,10 +1,10 @@
 export const serviceStatus = [
-    { service: 'SacDigital', status: 'Oscilando' },
+    { service: 'SacDigital', status: 'Operando' },
     { service: 'Panfleto.Online', status: 'Operando' },
     { service: 'SMSIdeal', status: 'Em manutenção' },
     { service: 'ConsultaIdeal', status: 'Oscilando' },
     { service: 'WhatsApp', status: 'Operando' },
-    { service: 'WhatsApp Business API', status: 'Em manutenção' }
+    { service: 'WhatsApp Business API', status: 'Em manutenção' },
 ]
 
 export const WhatsappNotifications = [
@@ -20,7 +20,7 @@ export const WhatsappNotifications = [
     },
     {
         hour: 2,
-        notifications: 36,
+        notifications: 16,
         country: 'Brasil',
     },
     {
@@ -250,3 +250,70 @@ export const WhatsappNotifications = [
         country: 'México',
     }
 ];
+
+export const serviceIncidents = [
+    {
+        service: 'WhatsApp',
+        solution: {
+            date: new Date('Fri Nov 06 2020 11:32:56 GMT-0300'),
+            description: 'WhatsApp voltou a operar normalmente.'
+        },
+        monitoring: {
+            date: new Date('Fri Nov 06 2020 08:21:11 GMT-0300'),
+            description: 'O serviço está sendo restaurado para alguns países.'
+        },
+        incident: {
+            date: new Date('Fri Nov 06 2020 05:12:42 GMT-0300'),
+            title: 'WhatsApp Interrompido',
+            description: 'O WhatsApp está passando por uma interrupção geral em todo o mundo. Não é possível usar o serviço porque o servidor está fora do ar.'
+        },
+    },
+    {
+        service: 'WhatsApp',
+        solution: {
+            date: new Date('Thu Nov 05 2020 14:32:56 GMT-0300'),
+            description: 'Gerador atenderá como backup em casos semelhantes, garantindo assim, a continuidade por períodos maiores que 23 horas.'
+        },
+        monitoring: {
+            date: new Date('Thu Nov 05 2020 13:21:11 GMT-0300'),
+            description: 'Aquisição de nova unidade de GERADOR DE ENERGIA A DIESEL.'
+        },
+        incident: {
+            date: new Date('Thu Nov 05 2020 12:12:42 GMT-0300'),
+            title: 'Incidente Energético',
+            description: 'Devido a incidentes naturais houvera a presença da falta de energia na região por tempo não previsto, fazendo com que hajam paradas do fornecimento de energia de forma segura, o que faz com que a cada período de 23horas seja obrigatório o reinício das atividades dos serviços prestados. Isto ocorre diante ao fato de que o gerador disponibilizado pela ALERTRACK possui coeficiência de até 20 Horas de disponibilidade do fornecimento contínuo,somados à disponibilização por parte de armazenamento de energia, menos o tempo necessário para o desligamento dos servidores'
+        },
+    },
+    {
+        service: 'SMSIdeal',
+        solution: {
+            date: new Date('Sun Nov 01 2020 14:32:56 GMT-0300'),
+            description: 'Entrou-se em contato com a provedora e o problema foi solucionado.'
+        },
+        monitoring: {
+            date: new Date('Sun Nov 01 2020 13:21:11 GMT-0300'),
+            description: 'Entrando em contato com a prestadora do serviço.'
+        },
+        incident: {
+            date: new Date('Sun Nov 01 2020 12:12:42 GMT-0300'),
+            title: 'Serviço SMSIdeal não respondendo',
+            description: 'As mensagens mandadas pelo sistema não chegam ao destinatário.'
+        },
+    },
+    {
+        service: 'WhatsApp Business API',
+        solution: {
+            date: new Date('Fri Oct 30 2020 14:32:56 GMT-0300'),
+            description: 'Aguardou-se o restabelecimento da API'
+        },
+        monitoring: {
+            date: new Date('Fri Oct 30 2020 13:21:11 GMT-0300'),
+            description: 'Entrando em contato com a prestadora do serviço.'
+        },
+        incident: {
+            date: new Date('Fri Oct 30 2020 12:12:42 GMT-0300'),
+            title: 'Api WhatsApp não responde',
+            description: 'Detectou-se que a API do WhatsApp está instável e não respondendo'
+        },
+    },
+]

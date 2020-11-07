@@ -49,8 +49,8 @@
 }
 
 .whatsapp p::before {
-  content: '';
-  height: 3px;
-  width: 30px;
-  background: violet;
+    content: '';
+    height: 3px;
+    width: 30px;
+    background: violet;
 }

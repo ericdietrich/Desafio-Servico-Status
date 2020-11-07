@@ -2,7 +2,97 @@
     margin-bottom: 140px;
 }
 
+.service-uptime .service-uptime-container {
+    margin: 30px 90px 30px 30px;
+    padding-bottom: 40px;
+}
+
+.service-uptime .service-uptime-container p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    color: #4D4F5C;
+    opacity: 80%;
+    margin-top: 40px;
+}
+
 .service-uptime h1 {
     padding: 30px 0 0 30px;
 }
 
+
+.service-uptime ul {
+    display: flex;
+    padding: 0;
+} 
+
+.service-uptime ul li {
+    position: relative;
+    list-style: none;
+    margin: 2px;
+    flex: 1;
+    height: 64px;
+    background: #909e97;
+}
+
+.service-uptime ul li.check {
+    background: #4AD991;
+}
+
+.service-uptime ul li.error {
+    background: #FFDA83;
+}
+
+.service-uptime ul li.settings {
+    background:#FF215D;
+}
+
+.service-uptime ul li .informational-element {
+    position: absolute;
+    top: 80px;
+    left: -4px;
+    height: 50px;
+    width: 150px;
+    background: #e7e4e4;
+    display: none;
+    border-radius: 2px;
+    border: .5px solid #70707022 ;
+    box-shadow: 2px 2px 2px 1px rgba(112, 112, 112, 0.2);
+    z-index: 100;
+}
+
+.service-uptime ul li:hover .informational-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.service-uptime ul li .informational-element::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #e7e4e4;
+}
+
+
+.service-uptime ul li .informational-element p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    color: #43425D;
+    font-weight: 700;
+    margin: 0;
+}
+
+.service-uptime ul li .informational-element span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    color: #43425D;
+    opacity: 80%;
+    margin: 0;
+}
