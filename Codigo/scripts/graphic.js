@@ -4,7 +4,7 @@ export default function graphicCreator() {
     //Essa função criará um grid nos eixos X e Y, e partir disso tem-se coordenadas dos pontos, que serão criados como elementos HTML
 
 
-    //Objeto com dados de notificações em cada hora e por país. Para fins de desenvolvimento é assumido que os dados já foram obtidos e tratados (de API ou Banco de Dados) e alimentaram o objeto criado abaixo.
+    //Objeto com dados de notificações em cada hora e por país. Para fins de desenvolvimento é assumido que os dados já foram obtidos e tratados (de API ou Banco de Dados) e alimentaram o objeto WhatsappNotifications.
 
     const graphicElement = document.querySelector('.graphic');
     const graphicDimensions = graphicElement.getBoundingClientRect();
@@ -52,28 +52,6 @@ export default function graphicCreator() {
         });
     }
     createElement();
-
-    /* function createLinesBetweenDots() {
-        const dots = document.querySelectorAll('.dot');
-
-        let x = parseFloat(dots[0].style.left);
-        let y = parseFloat(dots[0].style.top);
-
-        for (let i = 0; i < dots.length - 1; i++) {
-            let xNext = parseFloat(dots[i + 1].style.left);
-            let yNext = parseFloat(dots[i + 1].style.top);
-            let line = document.createElement('canvas');
-            dots[i].append(line);
-            let context = line.getContext('2d');
-            context.moveTo(x, y);
-            context.lineTo(xNext, yNext);
-            context.stroke();
-            x = xNext;
-            y = yNext;
-        }
-    }
-    createLinesBetweenDots() */
-
 
 
 }

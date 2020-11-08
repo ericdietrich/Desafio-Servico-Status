@@ -4,23 +4,36 @@
 
 .services ul {
     list-style: none;
-    font-family: Roboto;
-    font-size: 14px;
     padding: 30px;
     margin-right: 60px;
+    
+
+}
+
+.services ul hr {
+    border: 1.5px solid #F1F1F3;
+    background-color: #F1F1F3;
+    
 }
 
 .services ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
-
+.services ul li p {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #212529;
+    opacity: .9;
+}
 
 .services ul li span {
     border-radius: 50%;
     padding: 4px;
+    position: relative;
 }
 
 .services ul li .check {
@@ -37,6 +50,57 @@
     color: #FF7285;
     background: #FFE2E6;
 }
+
+.services ul li .hover-div {
+    display: none;
+    position: absolute;
+    left: 500px;
+    height: 60px;
+    width: 150px;
+    background: #eee9e9;
+    border-radius: 2px;
+    border: .5px solid #70707022;
+    box-shadow: 2px 2px 2px 1px rgba(112, 112, 112, 0.2);
+    z-index: 100;
+    text-align: center;
+}
+
+.services ul li .hover-div p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    color: #43425D;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.services ul li .hover-div span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    color: #43425D;
+    opacity: 80%;
+    margin: 0;
+}
+
+.services ul li .hover-div::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid  #eee9e9;
+    border-bottom: 8px solid transparent;
+}
+
+.services ul li:hover .hover-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 
 

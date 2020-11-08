@@ -1,5 +1,6 @@
 .incidents {
     position: relative;
+    padding-bottom: 60px;
 }
 
 .incidents h1 {
@@ -9,24 +10,22 @@
 }
 
 .incident {
-    padding: 50px 0 0 60px;
+    padding: 50px 0 30px 60px;
 }
 
 
 .incidents h2 {
     font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0 0 20px 0;
 }
 
-
-
 .incident-status {
     display: flex;
-    
+    padding: 0 80px 0 0;
+    text-align: justify;
 }
-
 
 .incident-status:not(:first-child){
     padding-top: 30px;
@@ -35,23 +34,29 @@
 .incident-status div {
     font-family: "Source Sans Pro", sans-serif;
     padding-left: 30px;
+    position: relative;
+}
+
+.incident-status div hr {
+    position: absolute;
+    width: 1000px;
 }
 
 .incident-status h3 {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .incident-status p {
     color: #4D4F5C;
-    font-size: 10px;
-    opacity: .8;
+    font-size: 16px;
+    opacity: .9;
 }
 
 .incident-status div span {
     color: #4D4F5C;
-    font-size: 10px;
-    opacity: .5;
+    font-size: 12px;
+    opacity: .7;
 }
 
 .incident .check {
@@ -78,4 +83,13 @@
     border-radius: 50%;
     color: #FFF;
     background:#FFCA83;
+}
+
+.incident .no-incident {
+    font-family: 'Trebuchet MS', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #4D4F5C;
+    opacity: 80%;
+    padding: 40px 0;
 }

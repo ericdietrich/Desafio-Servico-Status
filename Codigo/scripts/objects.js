@@ -1,257 +1,273 @@
 export const serviceStatus = [
-    { service: 'SacDigital', status: 'Operando' },
-    { service: 'Panfleto.Online', status: 'Operando' },
-    { service: 'SMSIdeal', status: 'Em manutenção' },
-    { service: 'ConsultaIdeal', status: 'Oscilando' },
-    { service: 'WhatsApp', status: 'Operando' },
-    { service: 'WhatsApp Business API', status: 'Em manutenção' },
+    { service: 'SacDigital', status: 'Operando', description: 'Sistema operando normalmente' },
+    { service: 'Panfleto.Online', status: 'Operando', description: 'Sistema operando normalmente' },
+    { service: 'SMSIdeal', status: 'Em manutenção', description: 'Implantação de uma nova feature' },
+    { service: 'ConsultaIdeal', status: 'Oscilando', description: 'Alto número de acessos' },
+    { service: 'WhatsApp', status: 'Operando', description: 'Sistema operando normalmente' },
+    { service: 'WhatsApp Business API', status: 'Em manutenção', description: 'WhatsApp instável em vários países' },
 ]
 
 export const WhatsappNotifications = [
     {
         hour: 0,
-        notifications: 15,
+        notifications: 54,
         country: 'Brasil',
     },
     {
         hour: 1,
-        notifications: 20,
+        notifications: 59,
         country: 'Brasil',
     },
     {
         hour: 2,
-        notifications: 16,
+        notifications: 66,
         country: 'Brasil',
     },
     {
         hour: 3,
-        notifications: 12,
+        notifications: 62,
         country: 'Brasil',
     },
     {
         hour: 4,
-        notifications: 42,
+        notifications: 69,
         country: 'Brasil',
     },
     {
         hour: 5,
-        notifications: 23,
+        notifications: 65,
         country: 'Brasil',
     },
     {
         hour: 6,
-        notifications: 12,
+        notifications: 72,
         country: 'Brasil',
     },
     {
         hour: 7,
-        notifications: 9,
+        notifications: 79,
         country: 'Brasil',
     },
     {
         hour: 8,
-        notifications: 0,
+        notifications: 76,
         country: 'Brasil',
     },
     {
         hour: 9,
-        notifications: 33,
+        notifications: 62,
         country: 'Brasil',
     },
     {
         hour: 10,
-        notifications: 20,
+        notifications: 59,
         country: 'Brasil',
     },
     {
         hour: 11,
-        notifications: 14,
+        notifications: 69,
         country: 'Brasil',
     },
     {
         hour: 12,
-        notifications: 10,
+        notifications: 72,
         country: 'Brasil',
     },
     {
         hour: 13,
-        notifications: 40,
+        notifications: 50,
         country: 'Brasil',
     },
     {
         hour: 14,
-        notifications: 17,
+        notifications: 56,
         country: 'Brasil',
     },
     {
         hour: 15,
-        notifications: 13,
+        notifications: 63,
         country: 'Brasil',
     },
     {
         hour: 16,
-        notifications: 12,
+        notifications: 72,
         country: 'Brasil',
     },
     {
         hour: 17,
-        notifications: 16,
+        notifications: 75,
         country: 'Brasil',
     },
     {
         hour: 18,
-        notifications: 45,
+        notifications: 55,
         country: 'Brasil',
     },
     {
         hour: 19,
-        notifications: 27,
+        notifications: 77,
         country: 'Brasil',
     },
     {
         hour: 20,
-        notifications: 40,
+        notifications: 55,
         country: 'Brasil',
     },
     {
         hour: 21,
-        notifications: 22,
+        notifications: 72,
         country: 'Brasil',
     },
     {
         hour: 22,
-        notifications: 15,
+        notifications: 64,
         country: 'Brasil',
     },
     {
         hour: 23,
-        notifications: 47,
+        notifications: 67,
         country: 'Brasil',
     },
 
     {
         hour: 0,
-        notifications: 74,
+        notifications: 14,
         country: 'México',
     },
     {
         hour: 1,
-        notifications: 45,
+        notifications: 22,
         country: 'México',
     },
     {
         hour: 2,
-        notifications: 87,
+        notifications: 25,
         country: 'México',
     },
     {
         hour: 3,
-        notifications: 67,
+        notifications: 19,
         country: 'México',
     },
     {
         hour: 4,
-        notifications: 59,
+        notifications: 29,
         country: 'México',
     },
     {
         hour: 5,
-        notifications: 89,
+        notifications: 14,
         country: 'México',
     },
     {
         hour: 6,
-        notifications: 95,
+        notifications: 15,
         country: 'México',
     },
     {
         hour: 7,
-        notifications: 74,
+        notifications: 29,
         country: 'México',
     },
     {
         hour: 8,
-        notifications: 83,
+        notifications: 23,
         country: 'México',
     },
     {
         hour: 9,
-        notifications: 93,
+        notifications: 33,
         country: 'México',
     },
     {
         hour: 10,
-        notifications: 62,
+        notifications: 19,
         country: 'México',
     },
     {
         hour: 11,
-        notifications: 58,
+        notifications: 18,
         country: 'México',
     },
     {
         hour: 12,
-        notifications: 78,
+        notifications: 17,
         country: 'México',
     },
     {
         hour: 13,
-        notifications: 71,
+        notifications: 16,
         country: 'México',
     },
     {
         hour: 14,
-        notifications: 57,
+        notifications: 31,
         country: 'México',
     },
     {
         hour: 15,
-        notifications: 83,
+        notifications: 23,
         country: 'México',
     },
     {
         hour: 16,
-        notifications: 52,
+        notifications: 22,
         country: 'México',
     },
     {
         hour: 17,
-        notifications: 96,
+        notifications: 27,
         country: 'México',
     },
     {
         hour: 18,
-        notifications: 65,
+        notifications: 25,
         country: 'México',
     },
     {
         hour: 19,
-        notifications: 77,
+        notifications: 17,
         country: 'México',
     },
     {
         hour: 20,
-        notifications: 70,
+        notifications: 13,
         country: 'México',
     },
     {
         hour: 21,
-        notifications: 92,
+        notifications: 31,
         country: 'México',
     },
     {
         hour: 22,
-        notifications: 55,
+        notifications: 35,
         country: 'México',
     },
     {
         hour: 23,
-        notifications: 87,
+        notifications: 17,
         country: 'México',
     }
 ];
 
 export const serviceIncidents = [
+    {
+        service: 'ConsultaIdeal',
+        solution: {
+            date: new Date('Sat Nov 07 2020 16:58:56 GMT-0300'),
+            description: 'Servidor reiniciado e operando normalmente.'
+        },
+        monitoring: {
+            date: new Date('Sat Nov 07 2020 16:55:11 GMT-0300'),
+            description: 'O servidor está offline.'
+        },
+        incident: {
+            date: new Date('Sat Nov 07 2020 16:45:42 GMT-0300'),
+            title: 'ConsultaIdeal Inoperante',
+            description: 'ConsultaIdeal está inoperante.'
+        },
+    },
     {
         service: 'WhatsApp',
         solution: {
@@ -301,6 +317,22 @@ export const serviceIncidents = [
         },
     },
     {
+        service: 'SMSIdeal',
+        solution: {
+            date: new Date('Sun Nov 01 2020 14:32:56 GMT-0300'),
+            description: 'Entrou-se em contato com a provedora e o problema foi solucionado.'
+        },
+        monitoring: {
+            date: new Date('Sun Nov 01 2020 13:21:11 GMT-0300'),
+            description: 'Entrando em contato com a prestadora do serviço.'
+        },
+        incident: {
+            date: new Date('Sun Nov 01 2020 12:12:42 GMT-0300'),
+            title: 'Serviço SMSIdeal não respondendo',
+            description: 'As mensagens mandadas pelo sistema não chegam ao destinatário.'
+        },
+    },
+    {
         service: 'WhatsApp Business API',
         solution: {
             date: new Date('Fri Oct 30 2020 14:32:56 GMT-0300'),
@@ -314,6 +346,19 @@ export const serviceIncidents = [
             date: new Date('Fri Oct 30 2020 12:12:42 GMT-0300'),
             title: 'Api WhatsApp não responde',
             description: 'Detectou-se que a API do WhatsApp está instável e não respondendo'
+        },
+    },
+    {
+        service: 'SacDigital',
+        solution: {},
+        monitoring: {
+            date: new Date('Mon Oct 26 2020 16:45:51 GMT-0300'),
+            description: 'A equipe responsável foi alertada e já está investigando a origem do problema'
+        },
+        incident: {
+            date: new Date('Mon Oct 26 2020 09:26:14 GMT-0300'),
+            title: 'SacDigital apresentando lentidão',
+            description: 'Vários clientes relataram lentidão no serviço desde o início do horário comercial'
         },
     },
 ]

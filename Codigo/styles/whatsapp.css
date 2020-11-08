@@ -31,26 +31,32 @@
     position: absolute;
     height: 8px;
     width: 8px;
-    background: transparent;
     border-radius: 50%;
 }
 
 .whatsapp .whatsapp-content .graphic .brazil {
     border: 2px solid #2CD9C5;
+    background: #2CD9C5;
 }
 
 .whatsapp .whatsapp-content .graphic .mexico {
     border: 2px solid #8C54FF;
+    background: #8C54FF;
 }
 
 .whatsapp .whatsapp-content .graphic-legend {
     font-family: 'Roboto', monospace;
     font-size: 12px;
+    font-weight: 600;
+    margin-left: 30px;
+    ;
 }
 
-.whatsapp p::before {
-    content: '';
-    height: 3px;
-    width: 30px;
-    background: violet;
+.whatsapp .whatsapp-content .graphic-legend .brazil{
+    color: #2CD9C5;
+    
+}
+
+.whatsapp .whatsapp-content .graphic-legend .mexico{
+    color: #8C54FF;
 }

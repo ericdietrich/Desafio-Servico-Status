@@ -2,26 +2,21 @@ import { serviceIncidents } from './objects.js'
 
 export default function handleServiceUptime() {
 
-
     const ul = document.querySelector('.service-uptime ul');
-
-
 
     //Data de hoje
     const todayDate = Date.now();
 
     //Número de dias atrás que serão exibidos os incidentes
-    let daysAgo = 20;
+    const daysAgo = 20;
 
     const p = document.querySelector('.service-uptime p');
     p.innerText = `${daysAgo} dias atrás`;
 
     //Data 90 dias atrás
-    let pastDate = new Date(todayDate - (daysAgo * 24 * 60 * 60 * 1000));
+    const pastDate = new Date(todayDate - (daysAgo * 24 * 60 * 60 * 1000));
     //Data que percorre dia a dia os 90 dias atrás
     let indexDate = pastDate;
-
-
 
     //Cria elemento li pra cada um dos últimos 90 dias
     do {

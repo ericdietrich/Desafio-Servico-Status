@@ -4,11 +4,20 @@ import { serviceStatus } from './objects.js';
 export default function handleServiceStatus() {
     const ul = document.querySelector('.services ul');
 
+    serviceStatus.forEach((item, index, arr) => {
 
-    serviceStatus.forEach((item) => {
         const li = document.createElement('li');
         const p = document.createElement('p');
         const span = document.createElement('span');
+
+        const hoverDiv = document.createElement('div');
+        hoverDiv.className = 'hover-div';
+        const hoverTitle = document.createElement('p');
+        hoverTitle.innerText = item.status;
+        const hoverDescription = document.createElement('span');
+        hoverDescription.innerText = item.description;
+
+        const horizontalLine = document.createElement('hr');
 
         p.innerText = item.service;
         span.classList.add('material-icons');
@@ -28,11 +37,23 @@ export default function handleServiceStatus() {
             }
         }
 
+
+
+        hoverDiv.append(hoverTitle);
+        hoverDiv.append(hoverDescription);
+
         li.append(p);
         li.append(span);
-        ul.append(li);
+        li.append(hoverDiv);
 
-    })
+        ul.append(li);
+        if (index < arr.length - 1) {
+            ul.appendChild(horizontalLine);
+        }
+
+    });
+
+
 
 }
 
