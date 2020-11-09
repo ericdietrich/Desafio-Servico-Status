@@ -29,11 +29,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    background: #F8FAFB;
+    border: none;
+    box-shadow: none;
 }
 
 .grid-2 > section {
-    width: 455%;
+    width: 49%;
 }
 
 .grid-1 + section, .grid-2 + section {

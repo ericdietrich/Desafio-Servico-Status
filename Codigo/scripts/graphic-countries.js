@@ -10,6 +10,7 @@ export default function graphicCountryCreator() {
     const slideDotsUl = document.createElement('ul');
     slideDotsUl.className = 'slide-dots';
 
+    //Percorre todos os países encontrados gerando os gráficos
     countryPercents.forEach((item) => {
 
         const containerPizzaInnerDiv = document.createElement('div');
@@ -32,6 +33,7 @@ export default function graphicCountryCreator() {
                 }],
             },
             options: {
+
             }
         })
 
@@ -42,15 +44,36 @@ export default function graphicCountryCreator() {
         containerPizzaInnerDiv.appendChild(countryNameH3);
         containerPizzaInnerDiv.appendChild(graphicCanvas)
         containerPizzaDiv.appendChild(containerPizzaInnerDiv);
-
-
     });
-
-
-
 
     containerPizzaDiv.appendChild(slideDotsUl);
     sectionPizza.appendChild(containerPizzaDiv);
+
+    //Navegação por cada gráfico
+    const navElements = document.querySelectorAll('.slide-dot');
+    const graphicElements = document.querySelectorAll('.container-pizza-inner');
+
+    navElements[0].classList.add('active');
+    graphicElements[0].classList.add('active');
+
+
+    //Percorre todos os elementos de navegação adicionando um eventListener de click
+    navElements.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            navElements.forEach((element, i) => {
+                if (i == index) {
+                    element.classList.add('active');
+                    graphicElements[i].classList.add('active');
+                } else {
+                    element.classList.remove('active');
+                    graphicElements[i].classList.remove('active');
+                }
+            })
+
+
+        })
+    })
+
 
 
 }

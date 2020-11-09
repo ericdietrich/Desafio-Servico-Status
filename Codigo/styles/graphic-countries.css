@@ -1,4 +1,12 @@
+@import './animation.css';
 
+.pizza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    overflow: hidden;
+}
 
 .pizza .container-pizza {
     display: flex;
@@ -7,31 +15,51 @@
 }
 
 .pizza .container-pizza .container-pizza-inner {
+    display: none;
+    align-items: center;
+    padding: 20px 0;
+    width: 560px;
+}
+
+.pizza .container-pizza .container-pizza-inner canvas.graphic-country {
+    width: 560px;
+}
+
+.pizza .container-pizza .container-pizza-inner.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    justify-content: center;
+    animation: show-from-up 1s forwards; 
 }
-
 
 .pizza .container-pizza .country-name {
     color: #4D4F5C;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
     padding: 20px 0;
 }
+
 
 .pizza .container-pizza .slide-dots {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+    padding: 0;
 }
 
 .pizza .container-pizza .slide-dots .slide-dot {
     height: 12px;
     width: 12px;
+    padding: 1px;
     border-radius: 50%;
     background: #707070;
     margin: 4px;
     opacity: 30%;
+}
+
+.pizza .container-pizza .slide-dots .slide-dot.active{
+    opacity: 100%;
+    transition: opacity 1s;
 }

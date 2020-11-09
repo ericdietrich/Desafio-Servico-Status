@@ -9,6 +9,7 @@ export default function graphicCreator() {
     const graphicElement = document.querySelector('.graphic');
     const graphicDimensions = graphicElement.getBoundingClientRect();
 
+
     function defineGrid() {
         let brazilNotifications = new Array;
         let mexicoNotifications = new Array;
@@ -17,6 +18,7 @@ export default function graphicCreator() {
             axisX: 0
         }
 
+        //Busca pelo maior número de notificações. 
         WhatsappNotifications.forEach((item) => {
             if (item.country == 'Brasil') {
                 brazilNotifications.push(+item.notifications);
@@ -28,12 +30,14 @@ export default function graphicCreator() {
 
         let notificationsMax = Math.max(...brazilNotifications, ...mexicoNotifications);
 
+        //No eixo Y, o maior valor de notificações define o grid. No X, o maior é 24, já que são 24 horas
         grid.axisY = +(graphicDimensions.height / notificationsMax);
         grid.axisX = +(graphicDimensions.width / 24);
         return grid;
     }
 
     function createElement() {
+
 
         const grid = defineGrid();
         WhatsappNotifications.forEach((item) => {
@@ -46,6 +50,7 @@ export default function graphicCreator() {
             if (item.country == 'México') {
                 dot.classList.add('mexico');
             }
+            //Cada elemento é multiplicado pelo grid para se definir o posicionamento do ponto no gráfico
             dot.style.top = (graphicDimensions.height - item.notifications * grid.axisY).toFixed(1) + 'px';
             dot.style.left = (item.hour * grid.axisX).toFixed(1) + 'px';
 
