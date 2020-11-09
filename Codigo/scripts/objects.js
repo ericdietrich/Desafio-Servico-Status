@@ -1,10 +1,83 @@
 export const serviceStatus = [
-    { service: 'SacDigital', status: 'Operando', description: 'Sistema operando normalmente' },
+    { service: 'SacDigital', status: 'Em manutenção', description: 'Sistema operando normalmente' },
     { service: 'Panfleto.Online', status: 'Operando', description: 'Sistema operando normalmente' },
     { service: 'SMSIdeal', status: 'Em manutenção', description: 'Implantação de uma nova feature' },
     { service: 'ConsultaIdeal', status: 'Oscilando', description: 'Alto número de acessos' },
     { service: 'WhatsApp', status: 'Operando', description: 'Sistema operando normalmente' },
     { service: 'WhatsApp Business API', status: 'Em manutenção', description: 'WhatsApp instável em vários países' },
+];
+
+export const countryPercents = [
+    {
+        country: 'Brasil',
+        percent1: 0.5,
+        percent2: 0.1,
+        percent3: 0.3,
+        percent4: 0.1,
+    },
+    {
+        country: 'México',
+        percent1: 0.13,
+        percent2: 0.26,
+        percent3: 0.35,
+        percent4: 0.26,
+    },
+    {
+        country: 'Itália',
+        percent1: 0.45,
+        percent2: 0.15,
+        percent3: 0.25,
+        percent4: 0.15,
+    },
+    {
+        country: 'Portugal',
+        percent1: 0.2,
+        percent2: 0.2,
+        percent3: 0.3,
+        percent4: 0.3,
+    },
+    {
+        country: 'Espanha',
+        percent1: 0.6,
+        percent2: 0.1,
+        percent3: 0.1,
+        percent4: 0.2,
+    },
+    {
+        country: 'Argentina',
+        percent1: 0.05,
+        percent2: 0.05,
+        percent3: 0.3,
+        percent4: 0.6,
+    },
+    {
+        country: 'Peru',
+        percent1: 0.1,
+        percent2: 0.15,
+        percent3: 0.7,
+        percent4: 0.05,
+    },
+    {
+        country: 'Chile',
+        percent1: 0.8,
+        percent2: 0,
+        percent3: 0.1,
+        percent4: 0.1,
+    },
+    {
+        country: 'França',
+        percent1: 0.5,
+        percent2: 0.3,
+        percent3: 0.1,
+        percent4: 0.1,
+    },
+    {
+        country: 'Canadá',
+        percent1: 0.3,
+        percent2: 0.1,
+        percent3: 0.3,
+        percent4: 0.3,
+    },
 ]
 
 export const WhatsappNotifications = [
@@ -361,4 +434,4 @@ export const serviceIncidents = [
             description: 'Vários clientes relataram lentidão no serviço desde o início do horário comercial'
         },
     },
-]
+];

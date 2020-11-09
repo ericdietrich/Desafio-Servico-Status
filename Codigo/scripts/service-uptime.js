@@ -8,7 +8,7 @@ export default function handleServiceUptime() {
     const todayDate = Date.now();
 
     //Número de dias atrás que serão exibidos os incidentes
-    const daysAgo = 20;
+    const daysAgo = 50;
 
     const p = document.querySelector('.service-uptime p');
     p.innerText = `${daysAgo} dias atrás`;
