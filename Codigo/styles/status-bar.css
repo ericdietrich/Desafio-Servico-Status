@@ -41,16 +41,31 @@
 
 .status .status-content .status-image {
     margin: 0 30px 0 24px;
-    width: 38px;
-    height: 38px;
-    background: #4AD991;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 .status .status-content .status-image img {
-    width: 22px;
-    height: 22px;
+    height: 3rem;
+    width:3rem;
+    border-radius: 50%;
+    
+}
+
+.status .status-content .status-image #green-check {
+    background: #4AD991;  
+}
+
+.status .status-content .status-image #yellow-info {
+    background:#FFCA83;
+    color: violet;
+}
+
+.status .status-content .status-image #red-settings {
+    background: #FF7285;
 }

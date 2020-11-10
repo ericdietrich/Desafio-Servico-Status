@@ -30,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: show-from-up 1s forwards; 
+    animation: show-from-right 1s forwards; 
 }
 
 .pizza .container-pizza .country-name {

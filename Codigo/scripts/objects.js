@@ -1,10 +1,10 @@
 export const serviceStatus = [
-    { service: 'SacDigital', status: 'Em manutenção', description: 'Sistema operando normalmente' },
+    { service: 'SacDigital', status: 'Operando', description: 'Sistema operando normalmente' },
     { service: 'Panfleto.Online', status: 'Operando', description: 'Sistema operando normalmente' },
     { service: 'SMSIdeal', status: 'Em manutenção', description: 'Implantação de uma nova feature' },
     { service: 'ConsultaIdeal', status: 'Oscilando', description: 'Alto número de acessos' },
     { service: 'WhatsApp', status: 'Operando', description: 'Sistema operando normalmente' },
-    { service: 'WhatsApp Business API', status: 'Em manutenção', description: 'WhatsApp instável em vários países' },
+    { service: 'WhatsApp Business API', status: 'Operando', description: 'WhatsApp instável em vários países' },
 ];
 
 export const countryPercents = [
@@ -325,6 +325,24 @@ export const WhatsappNotifications = [
 ];
 
 export const serviceIncidents = [
+
+
+    {
+        service: 'Panfleto.Online',
+        solution: {
+            date: new Date('Tue Nov 10 2020 16:01:48 GMT-0300'),
+            description: 'O sistema foi atualizado.'
+        },
+        monitoring: {
+            date: new Date('Tue Nov 10 2020 15:01:48 GMT-0300'),
+            description: 'Equipe de segurança da informação está investigando o incidente.'
+        },
+        incident: {
+            date: new Date('Tue Nov 10 2020 14:01:48 GMT-0300'),
+            title: 'Falha de Segurança Panfleto.Online',
+            description: 'Panfleto.Online foi desabilitado por suspeita de brecha de segurança.'
+        },
+    },
     {
         service: 'ConsultaIdeal',
         solution: {
