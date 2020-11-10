@@ -59,30 +59,35 @@
     opacity: .7;
 }
 
+.incident .incident-status span.material-icons {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .incident .check {
-    height: 24px;
-    width: 24px;
-    border: 1px solid #5EE2A0;
+    border: 2px solid #5EE2A0;
     border-radius: 50%;
     color: #5EE2A0;
     background: #FFF;
+    font-size: 36px;
 }
 
 .incident .eye {
-    height: 24px;
-    width: 24px;
-    border: 1px solid #81C9FF;
+    border: 2px solid #81C9FF;
     border-radius: 50%;
     color: #81C9FF;
     background: #FFF;
+    font-size: 32px;
 }
 
 .incident .info {
-    height: 26px;
-    width: 26px;
     border-radius: 50%;
     color: #FFF;
     background:#FFCA83;
+    font-size: 36px;
 }
 
 .incident .no-incident {
