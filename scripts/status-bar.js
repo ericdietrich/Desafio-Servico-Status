@@ -49,18 +49,18 @@ export default function handleStatus() {
     if (notWorkingCounter) {
         lastIncidentH2.innerText = 'Sistema em manutenção';
         statusImage.id = 'red-settings';
-        statusImage.src = '../src/img/settings-white.svg';
+        statusImage.src = '../Desafio-Servico-Status/src/img/settings-white.svg';
         statusImage.alt = 'Ícone Engrenagem Vermelha';
     } else {
         if (waveringCounter) {
             lastIncidentH2.innerText = 'Sistema oscilando';
             statusImage.id = 'yellow-info';
-            statusImage.src = '../src/img/info-black.svg';
+            statusImage.src = '../Desafio-Servico-Status/src/img/info-black.svg';
             statusImage.alt = 'Ícone Informação Amarelo';
         } else {
             lastIncidentH2.innerText = 'Todo o sistema operacional';
             statusImage.id = 'green-check';
-            statusImage.src = '../src/img/check-white.svg';
+            statusImage.src = '../Desafio-Servico-Status/src/img/check-white.svg';
             statusImage.alt = 'Ícone Check Verde';
         }
     }
