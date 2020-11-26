@@ -1,8 +1,8 @@
 export const serviceStatus = [
-    { service: 'SacDigital', status: 'Operando', description: 'Sistema operando normalmente' },
-    { service: 'Panfleto.Online', status: 'Operando', description: 'Sistema operando normalmente' },
-    { service: 'SMSIdeal', status: 'Em manutenção', description: 'Implantação de uma nova feature' },
-    { service: 'ConsultaIdeal', status: 'Oscilando', description: 'Alto número de acessos' },
+    { service: 'Sistema SAC Digital', status: 'Operando', description: 'Sistema operando normalmente' },
+    { service: 'Página Online', status: 'Em manutenção', description: 'Sistema offline' },
+    { service: 'SMS Sender', status: 'Operando', description: 'Sistema ok' },
+    { service: 'Sistema Consulta ao Banco', status: 'Oscilando', description: 'Alto número de acessos' },
     { service: 'WhatsApp', status: 'Operando', description: 'Sistema operando normalmente' },
     { service: 'WhatsApp Business API', status: 'Operando', description: 'WhatsApp instável em vários países' },
 ];
@@ -78,12 +78,19 @@ export const countryPercents = [
         percent3: 0.3,
         percent4: 0.3,
     },
+    {
+        country: 'Alemanha',
+        percent1: 0.3,
+        percent2: 0.1,
+        percent3: 0.3,
+        percent4: 0.3,
+    },
 ]
 
 export const WhatsappNotifications = [
     {
         hour: 0,
-        notifications: 54,
+        notifications: 50,
         country: 'Brasil',
     },
     {
@@ -325,10 +332,26 @@ export const WhatsappNotifications = [
 ];
 
 export const serviceIncidents = [
+    {
+        service: 'Página Online',
+        solution: {
+            date: new Date('Tue Nov 24 2020 16:01:48 GMT-0300'),
+            description: 'O sistema foi atualizado.'
+        },
+        monitoring: {
+            date: new Date('Tue Nov 24 2020 15:01:48 GMT-0300'),
+            description: 'Equipe de segurança da informação está investigando o incidente.'
+        },
+        incident: {
+            date: new Date('Tue Nov 24 2020 22:39:48 GMT-0300'),
+            title: 'Falha de Segurança Panfleto.Online',
+            description: 'Página Online foi desabilitado por suspeita de brecha de segurança.'
+        },
+    },
 
 
     {
-        service: 'Panfleto.Online',
+        service: 'Página Online',
         solution: {
             date: new Date('Tue Nov 10 2020 16:01:48 GMT-0300'),
             description: 'O sistema foi atualizado.'
@@ -340,11 +363,11 @@ export const serviceIncidents = [
         incident: {
             date: new Date('Tue Nov 10 2020 14:01:48 GMT-0300'),
             title: 'Falha de Segurança Panfleto.Online',
-            description: 'Panfleto.Online foi desabilitado por suspeita de brecha de segurança.'
+            description: 'Página Online foi desabilitado por suspeita de brecha de segurança.'
         },
     },
     {
-        service: 'ConsultaIdeal',
+        service: 'Sistema Consulta ao Banco',
         solution: {
             date: new Date('Sat Nov 07 2020 16:58:56 GMT-0300'),
             description: 'Servidor reiniciado e operando normalmente.'
@@ -355,8 +378,8 @@ export const serviceIncidents = [
         },
         incident: {
             date: new Date('Sat Nov 07 2020 16:45:42 GMT-0300'),
-            title: 'ConsultaIdeal Inoperante',
-            description: 'ConsultaIdeal está inoperante.'
+            title: 'Sistema Consulta ao Banco Inoperante',
+            description: 'Sistema Consulta ao Banco está inoperante.'
         },
     },
     {
@@ -388,11 +411,11 @@ export const serviceIncidents = [
         incident: {
             date: new Date('Thu Nov 05 2020 12:12:42 GMT-0300'),
             title: 'Incidente Energético',
-            description: 'Devido a incidentes naturais houvera a presença da falta de energia na região por tempo não previsto, fazendo com que hajam paradas do fornecimento de energia de forma segura, o que faz com que a cada período de 23horas seja obrigatório o reinício das atividades dos serviços prestados. Isto ocorre diante ao fato de que o gerador disponibilizado pela ALERTRACK possui coeficiência de até 20 Horas de disponibilidade do fornecimento contínuo,somados à disponibilização por parte de armazenamento de energia, menos o tempo necessário para o desligamento dos servidores'
+            description: 'Devido a incidentes naturais houvera a presença da falta de energia na região por tempo não previsto, fazendo com que hajam paradas do fornecimento de energia de forma segura, o que faz com que a cada período de 23horas seja obrigatório o reinício das atividades dos serviços prestados. Isto ocorre diante ao fato de que o gerador disponibilizado pelo provedor do serviço possui coeficiência de até 20 Horas de disponibilidade do fornecimento contínuo,somados à disponibilização por parte de armazenamento de energia, menos o tempo necessário para o desligamento dos servidores'
         },
     },
     {
-        service: 'SMSIdeal',
+        service: 'SMS Sender',
         solution: {
             date: new Date('Sun Nov 01 2020 14:32:56 GMT-0300'),
             description: 'Entrou-se em contato com a provedora e o problema foi solucionado.'
@@ -403,12 +426,12 @@ export const serviceIncidents = [
         },
         incident: {
             date: new Date('Sun Nov 01 2020 12:12:42 GMT-0300'),
-            title: 'Serviço SMSIdeal não respondendo',
+            title: 'Serviço SMS Sender não respondendo',
             description: 'As mensagens mandadas pelo sistema não chegam ao destinatário.'
         },
     },
     {
-        service: 'SMSIdeal',
+        service: 'SMS Sender',
         solution: {
             date: new Date('Sun Nov 01 2020 14:32:56 GMT-0300'),
             description: 'Entrou-se em contato com a provedora e o problema foi solucionado.'
@@ -419,7 +442,7 @@ export const serviceIncidents = [
         },
         incident: {
             date: new Date('Sun Nov 01 2020 12:12:42 GMT-0300'),
-            title: 'Serviço SMSIdeal não respondendo',
+            title: 'Serviço SMS Sender não respondendo',
             description: 'As mensagens mandadas pelo sistema não chegam ao destinatário.'
         },
     },
@@ -440,7 +463,7 @@ export const serviceIncidents = [
         },
     },
     {
-        service: 'SacDigital',
+        service: 'Sistema SAC Digital',
         solution: {},
         monitoring: {
             date: new Date('Mon Oct 26 2020 16:45:51 GMT-0300'),
@@ -448,7 +471,7 @@ export const serviceIncidents = [
         },
         incident: {
             date: new Date('Mon Oct 26 2020 09:26:14 GMT-0300'),
-            title: 'SacDigital apresentando lentidão',
+            title: 'Sistema SAC Digital apresentando lentidão',
             description: 'Vários clientes relataram lentidão no serviço desde o início do horário comercial'
         },
     },
